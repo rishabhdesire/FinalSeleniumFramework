@@ -43,7 +43,7 @@ public class ValidateCourseTitle extends base {
 		//compare actual and expected values
 		
 		Assert.assertEquals(lpg.getCourseTitle().getText(), "PracticePage");
-		log.info("Successfully Validated Course Title Name");
+		log.info("Successfully Validated Course Title");
 	}
 	
 	@AfterTest
