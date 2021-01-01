@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Framework.Listeners"/>
+  </listeners>
+  <test name="Course Title testing(failed)" parallel="tests">
+    <classes>
+      <class name="Framework.ValidateCourseTitle">
+        <methods>
+          <include name="initialize"/>
+          <include name="ValidatePageTitle"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Framework.ValidateCourseTitle -->
+      <class name="Framework.ValidateCourseNavigationBar">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Framework.ValidateCourseNavigationBar -->
+      <class name="Framework.HomePage">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Framework.HomePage -->
+    </classes>
+  </test> <!-- Course Title testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->

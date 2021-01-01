@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16624" started-at="2020-12-31T16:04:30Z" finished-at="2020-12-31T16:04:47Z">
+    <groups>
+    </groups>
+    <test name="App Testing" duration-ms="4" started-at="2020-12-31T16:04:30Z" finished-at="2020-12-31T16:04:30Z">
+    </test> <!-- App Testing -->
+    <test name="Course Title testing" duration-ms="14922" started-at="2020-12-31T16:04:30Z" finished-at="2020-12-31T16:04:45Z">
+      <class name="Framework.ValidateCourseTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Framework.ValidateCourseTitle@301eda63]" name="initialize" is-config="true" duration-ms="12215" started-at="2020-12-31T21:34:30Z" finished-at="2020-12-31T21:34:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="ValidatePageTitle()[pri:0, instance:Framework.ValidateCourseTitle@301eda63]" name="ValidatePageTitle" duration-ms="140" started-at="2020-12-31T21:34:42Z" finished-at="2020-12-31T21:34:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [PracticePage] but found [Practice Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [PracticePage] but found [Practice Page]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at Framework.ValidateCourseTitle.ValidatePageTitle(ValidateCourseTitle.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatePageTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Framework.ValidateCourseTitle@301eda63]" name="teardown" is-config="true" duration-ms="815" started-at="2020-12-31T21:34:44Z" finished-at="2020-12-31T21:34:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Framework.ValidateCourseTitle -->
+    </test> <!-- Course Title testing -->
+    <test name="Course Navigation testing" duration-ms="16052" started-at="2020-12-31T16:04:30Z" finished-at="2020-12-31T16:04:46Z">
+      <class name="Framework.ValidateCourseNavigationBar">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Framework.ValidateCourseNavigationBar@71329995]" name="initialize" is-config="true" duration-ms="13413" started-at="2020-12-31T21:34:30Z" finished-at="2020-12-31T21:34:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="ValidateHomeLinkExist()[pri:0, instance:Framework.ValidateCourseNavigationBar@71329995]" name="ValidateHomeLinkExist" duration-ms="285" started-at="2020-12-31T21:34:44Z" finished-at="2020-12-31T21:34:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHomeLinkExist -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Framework.ValidateCourseNavigationBar@71329995]" name="teardown" is-config="true" duration-ms="2348" started-at="2020-12-31T21:34:44Z" finished-at="2020-12-31T21:34:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Framework.ValidateCourseNavigationBar -->
+    </test> <!-- Course Navigation testing -->
+    <test name="Homepage testing" duration-ms="16624" started-at="2020-12-31T16:04:30Z" finished-at="2020-12-31T16:04:47Z">
+      <class name="Framework.HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Framework.HomePage@68dc098b]" name="initialize" is-config="true" duration-ms="4420" started-at="2020-12-31T21:34:30Z" finished-at="2020-12-31T21:34:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Framework.HomePage@68dc098b]" name="basePageNavigation" duration-ms="10596" started-at="2020-12-31T21:34:35Z" data-provider="getData" finished-at="2020-12-31T21:34:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricteduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:Framework.HomePage@68dc098b]" name="basePageNavigation" duration-ms="1455" started-at="2020-12-31T21:34:45Z" data-provider="getData" finished-at="2020-12-31T21:34:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Framework.HomePage@68dc098b]" name="teardown" is-config="true" duration-ms="142" started-at="2020-12-31T21:34:47Z" finished-at="2020-12-31T21:34:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Framework.HomePage -->
+    </test> <!-- Homepage testing -->
+  </suite> <!-- Suite -->
+</testng-results>
